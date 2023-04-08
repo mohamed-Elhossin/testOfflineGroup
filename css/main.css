@@ -1,0 +1,252 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 3000px;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/p2.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.home .layout {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.home .nav {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.home .nav ul li {
+    margin: 15px;
+}
+
+.home .nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+.home .nav .logo img {
+    width: 90px;
+    margin-top: 15px
+}
+
+/* ======= End Nav Bar */
+
+
+.home .caption {
+    background-color: transparent;
+    text-align: center;
+}
+
+.home .caption img {
+    width: 500px;
+}
+
+.home .caption h1 {
+    margin: 40px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: floralwhite;
+}
+
+.home .caption button {
+    width: 20%;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.home .caption .btn1 {
+    background-color: darkred;
+}
+
+.home .caption .btn2 {
+    background-color: darkblue;
+}
+
+
+.home .caption i {
+    float: left;
+    color: rgb(247, 247, 247);
+    transition: all 1s;
+}
+
+.home .caption button:hover i {
+    transform: rotate(360deg);
+}
+
+/* ========== End Home ============= */
+
+#profile {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url('../img/p7.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#profile .profile_header {
+
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+#profile .profile_header h1 {
+    font-size: 38px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+    border-radius: 20px;
+}
+
+#profile .profile_header .hr {
+    background-image: linear-gradient(to left, black, white, black);
+    height: 5px;
+    border-radius: 50%;
+
+}
+
+/* End profile Header */
+#profile .container {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+#profile .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#profile .profile {
+    margin: 10px 0px;
+    width: 30%;
+    height: 400px;
+    background-color: red;
+    background-size: 100% 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#profile .profile img {
+    width: 100%;
+    height: 100%;
+}
+
+#profile .profile .caption {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    transition: all 0.5s;
+}
+
+
+#profile .profile:hover .caption {
+    top: 0%;
+    right: 0%;
+    transform: rotate(360deg);
+}
+
+#profile .profile .caption h1 {
+    padding: 20px;
+    font-size: 35px;
+}
+
+#profile .profile .caption p {
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+#profile .profile .caption button {
+    width: 60%;
+    border-radius: 20px;
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* SM */
+@media (max-width:600px) {
+    .home .nav ul {
+        display: none;
+    }
+
+    .home .nav .logo img {
+        padding-left: 40px;
+    }
+
+    .home .caption img {
+        width: 300px;
+    }
+
+    .home .caption h1 {
+        font-size: 25px;
+    }
+
+    .home .caption button {
+        width: 40%;
+    }
+
+
+    #profile .profile_header {
+        width: 90%;
+    }
+
+    #profile .profile {
+        width: 90%;
+    }
+
+    #profile .profile .caption p {
+        font-size: 16px;
+    }
+
+    #profile .profile .caption button {
+        width: 90%;
+        padding: 5px;
+    }
+}
