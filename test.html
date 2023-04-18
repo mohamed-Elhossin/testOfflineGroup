@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color: rgb(193, 193, 255);
+        }
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .item {
+            width: 22%;
+            box-sizing: border-box;
+        }
+
+        /* LG */
+        @media (max-width : 950px) {
+
+            body {
+                background-color: rgb(238, 238, 177);
+            }
+
+            .item {
+                width: 30%;
+            }
+
+        }
+
+        /* sm */
+        @media (max-width:750px) {
+            .item {
+                width: 40%;
+            }
+        }
+        @media (max-width:600px) {
+            .item {
+                width: 90%;
+                background-color: rgb(183, 227, 183);
+                border: 1px solid black;
+                text-align: center;
+                margin: 10px 0px ;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="item">
+            <h1>#Item</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, sint. Perferendis in aliquid, id
+                quasi laboriosam illo error laudantium earum. Aperiam architecto explicabo doloribus sed rem
+                delectus dolorem laborum saepe!</p>
+
+        </div>
+        <div class="item">
+            <h1>#Item</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, sint. Perferendis in aliquid, id
+                quasi laboriosam illo error laudantium earum. Aperiam architecto explicabo doloribus sed rem
+                delectus dolorem laborum saepe!</p>
+
+        </div>
+        <div class="item">
+            <h1>#Item</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, sint. Perferendis in aliquid, id
+                quasi laboriosam illo error laudantium earum. Aperiam architecto explicabo doloribus sed rem
+                delectus dolorem laborum saepe!</p>
+
+        </div>
+        <div class="item">
+            <h1>#Item</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, sint. Perferendis in aliquid, id
+                quasi laboriosam illo error laudantium earum. Aperiam architecto explicabo doloribus sed rem
+                delectus dolorem laborum saepe!</p>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
